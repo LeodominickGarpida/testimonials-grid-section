@@ -1,0 +1,153 @@
+:root {
+    --clr-mdviolet: hsl(263, 55%, 52%);
+    --clr-vdgrayishblue: hsl(217, 19%, 35%);
+    --clr-vdblackishblue: hsl(219, 29%, 14%);
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-ltgray: hsl(0, 0%, 81%);
+    --clr-ltgrayishblue: hsl(210, 46%, 95%);
+    --clr-dkgray: hsla(0, 0%, 100%, 0.7);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--clr-ltgrayishblue);
+    line-height: 1.3;
+    padding: 70px 23px;
+}
+
+h3, p {
+    margin-top: 0;
+}
+
+
+section {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 24px 0;
+    max-width: 85.5rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 62.5rem) {
+
+    section {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 24px 30px;
+    }
+
+    .grid__block__1 {
+        grid-column: 1 / 3;
+    }
+
+    .grid__block__3 {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    .grid__block__4 
+    {
+        grid-column: 2 / 4;
+    }
+
+    .grid__block__5 {
+        grid-row: 1 / 3;
+        grid-column:  4 / 5;
+    }
+
+}
+
+section > * {
+    padding: 30px 27px;
+    border-radius: 10px;
+}
+
+.grid__block__1 {
+    background: url("images/bg-pattern-quotation.svg") no-repeat 80% 0;
+    background-color: var(--clr-mdviolet);
+}
+
+.grid__block__2 {
+    background: var(--clr-vdgrayishblue);
+}
+
+.grid__block__3 {
+    background: var(--clr-white);
+    /* grid-row: 5 / 6; */
+}
+
+.grid__block__4 {
+    
+    background: var(--clr-vdblackishblue);
+
+}
+
+.grid__block__5 {
+    background: var(--clr-white);
+}
+
+
+.grid__block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.grid__container, .grid__desc, .grid__desc__dark {
+    font-size: 13px;
+}
+
+img {
+    border-radius: 50px;
+    border: 1px solid var(--clr-mdviolet);
+    height: 30px;
+    width: 30px;
+    margin-right: 18px;
+}
+
+
+.grid__name__dark, .grid__position__dark, .grid__title__dark {
+    color: var(--clr-vdgrayishblue);
+}
+
+.grid__name, .grid__position, .grid__name__dark, .grid__position__dark {
+    margin-bottom: 0;
+}
+
+
+/* Title for all block */
+.grid__title, .grid__title__dark {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.grid__title, .grid__name {
+    color: var(--clr-white);  
+}
+
+
+/* Description for all blck */
+
+.grid__desc, .grid__position { 
+    color: var(--clr-dkgray);
+}
+
+.grid__desc, .grid__desc__dark {
+    line-height: 20px;
+}
+
+.grid__desc__dark {
+    color: var(--clr-vdgrayishblue);
+}
+
