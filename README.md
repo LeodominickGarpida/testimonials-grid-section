@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/LeodominickGarpida/testimonials-grid-section)
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Live Site URL: [live site](https://leodominickgarpida.github.io/testimonials-grid-section/)
 
 ## Author
 
